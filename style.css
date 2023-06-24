@@ -1,0 +1,116 @@
+body {
+    background-image: url(resources/background.png);
+    background-size: cover;
+}
+
+#female {
+    position: absolute;
+    background-image: url(resources/female.png);
+    background-size: 100% 100%;
+    width: 740px;
+    height: 600px;
+    top: -100px;
+    left: 550px;
+
+    opacity: 0;
+    transition: opacity .8s ease-in-out; /* Adjust the transition duration */
+    
+}
+
+#headline1 {
+    position: absolute;
+    background-image: url(resources/headline1.png);
+    background-size: 100% 100%;
+    width: 740px;
+    height: 600px;
+
+    top: 100px;
+
+    opacity: 0;
+    left: -100px; /* Initial position off the left side */
+    transition: opacity 1s, left 1s, transform 1s; /* Transition properties */
+    transform: scale(1); /* Initial scale of 1 (no scaling) */
+   
+}
+#headline1.fadeout {
+    opacity: 0;
+    transform: scale(0.1); 
+}
+
+
+#headline2 {
+    position: absolute;
+    background-image: url(resources/headline2.png);
+    background-size: contain;
+    width: 740px;
+    height: 600px;
+
+    opacity: 0;
+    right: 100%; /* Initial position off the right side */
+    transition: opacity 1s, left 1s; /* Transition properties */
+}
+
+#subheadline {
+    position: absolute;
+    background-image: url(resources/subheadline.png);
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 600px;
+
+    right: 710px;
+    top: 165px;
+    opacity: 0;
+    transition: opacity .37s ease-in;
+}
+
+#learnmore {
+    
+    position: absolute;
+    background-image: url(resources/learnmore.png);
+    background-size: 100% 100%;
+    width: 450px;
+    height: 130px;
+
+    left: 650px;
+    top: 530px;
+
+    opacity: 0;
+    transition: opacity .37s ease-in;
+}
+
+#logo {
+    position: absolute;
+    background-image: url(resources/logo.png);
+    background-size: 100% 100%;
+    background-position: center;
+
+    width: 435px;
+    height: 450px;
+
+   
+    opacity: 0;
+
+    left: -100px; /* Initial position off the left side */
+    transition: opacity 1s, left 1s, transform 1s; /* Transition properties */
+}
+
+#replay {
+    position: absolute;
+    background-image: url(resources/replay.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 470px;
+    height: 150px;
+
+    opacity: 0;
+
+    top: 650px;
+    left: 650px;
+
+    transition: opacity .37s ease-in;
+
+
+
+   
+}
